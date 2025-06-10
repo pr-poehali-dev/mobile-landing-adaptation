@@ -2,43 +2,63 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-white flex items-center justify-center px-4 relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0">
-        {/* Grid pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:60px_60px]"></div>
-
-        {/* Decorative circles */}
-        <div className="absolute top-20 left-20 w-32 h-32 bg-blue-100 rounded-full opacity-50"></div>
-        <div className="absolute top-40 right-32 w-24 h-24 bg-green-100 rounded-full opacity-40"></div>
-        <div className="absolute bottom-32 left-32 w-20 h-20 bg-yellow-100 rounded-full opacity-30"></div>
-        <div className="absolute bottom-20 right-20 w-28 h-28 bg-red-100 rounded-full opacity-35"></div>
-      </div>
-
-      <div className="max-w-6xl mx-auto text-center relative z-10">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-gray-900">
-          Создаем будущее
-          <br />
-          <span className="text-blue-600">вместе с вами</span>
-        </h1>
-        <p className="text-xl md:text-2xl mb-8 text-gray-600 max-w-3xl mx-auto">
-          Инновационные решения для вашего бизнеса. Разработка, дизайн и
-          консалтинг на высочайшем уровне.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+    <section className="min-h-screen bg-white flex flex-col">
+      {/* Navigation */}
+      <nav className="flex justify-between items-center px-8 py-6">
+        <div className="text-xl font-semibold">Whitepace</div>
+        <div className="hidden md:flex items-center space-x-8">
+          <a href="#" className="text-gray-700 hover:text-gray-900">
+            Products
+          </a>
+          <a href="#" className="text-gray-700 hover:text-gray-900">
+            Solutions
+          </a>
+          <a href="#" className="text-gray-700 hover:text-gray-900">
+            Resources
+          </a>
+          <a href="#" className="text-gray-700 hover:text-gray-900">
+            Pricing
+          </a>
+        </div>
+        <div className="flex items-center space-x-4">
           <Button
-            size="lg"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
+            variant="ghost"
+            className="text-yellow-500 bg-yellow-50 hover:bg-yellow-100"
           >
-            Начать проект
+            Login
           </Button>
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300"
-          >
-            Узнать больше
+          <Button className="bg-blue-500 hover:bg-blue-600 text-white">
+            Try Whitepace free →
           </Button>
+        </div>
+      </nav>
+
+      {/* Main Hero Content */}
+      <div className="flex-1 flex items-center px-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div className="space-y-6">
+            <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              Get More Done with whitepace
+            </h1>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Project management software that enables your teams to
+              collaborate, plan, analyze and manage everyday tasks
+            </p>
+            <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 text-lg">
+              Try Whitepace free →
+            </Button>
+          </div>
+
+          {/* Right Content - Image placeholder */}
+          <div className="bg-blue-100 rounded-lg aspect-[4/3] flex items-center justify-center">
+            <div className="text-blue-400 text-center">
+              <div className="w-24 h-24 mx-auto mb-4 bg-blue-200 rounded-lg flex items-center justify-center">
+                📊
+              </div>
+              <p className="text-sm">Project Management Interface</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
