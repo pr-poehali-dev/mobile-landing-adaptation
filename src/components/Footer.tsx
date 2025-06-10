@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-orange-400 bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold mb-4 text-blue-400">
               Наша Компания
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
@@ -16,25 +16,25 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition-colors"
+                className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
               >
                 <Icon name="Twitter" size={20} />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition-colors"
+                className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
               >
                 <Icon name="Facebook" size={20} />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition-colors"
+                className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
               >
                 <Icon name="Instagram" size={20} />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition-colors"
+                className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
               >
                 <Icon name="Linkedin" size={20} />
               </a>
@@ -45,22 +45,22 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Услуги</h4>
             <ul className="space-y-2 text-gray-300">
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">
+                <a href="#" className="hover:text-blue-400 transition-colors">
                   Разработка
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">
+                <a href="#" className="hover:text-blue-400 transition-colors">
                   Дизайн
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">
+                <a href="#" className="hover:text-blue-400 transition-colors">
                   Консалтинг
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">
+                <a href="#" className="hover:text-blue-400 transition-colors">
                   Поддержка
                 </a>
               </li>
@@ -71,19 +71,15 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Контакты</h4>
             <div className="space-y-3 text-gray-300">
               <div className="flex items-center">
-                <Icon name="Phone" size={16} className="mr-2 text-orange-400" />
+                <Icon name="Phone" size={16} className="mr-2 text-blue-400" />
                 <span>+7 (999) 123-45-67</span>
               </div>
               <div className="flex items-center">
-                <Icon name="Mail" size={16} className="mr-2 text-orange-400" />
+                <Icon name="Mail" size={16} className="mr-2 text-blue-400" />
                 <span>info@company.ru</span>
               </div>
               <div className="flex items-center">
-                <Icon
-                  name="MapPin"
-                  size={16}
-                  className="mr-2 text-orange-400"
-                />
+                <Icon name="MapPin" size={16} className="mr-2 text-blue-400" />
                 <span>Москва, Россия</span>
               </div>
             </div>

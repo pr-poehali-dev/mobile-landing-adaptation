@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
 const Testimonials = () => {
@@ -61,14 +60,14 @@ const Testimonials = () => {
 
 const TestimonialCard = ({ testimonial }: { testimonial: any }) => {
   return (
-    <div className="bg-gradient-to-br from-purple-50 to-orange-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+    <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
       <div className="flex items-center mb-4">
         {[...Array(testimonial.rating)].map((_, i) => (
           <Icon
             key={i}
             name="Star"
             size={20}
-            className="text-orange-400 fill-current"
+            className="text-yellow-400 fill-current"
           />
         ))}
       </div>
